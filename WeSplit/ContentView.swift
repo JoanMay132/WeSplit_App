@@ -49,7 +49,7 @@ struct ContentView: View {
                 }
                 // Just printing Hello
                 Section{
-                    Text("Hello World!")
+                    Text("Hello World! How are you?")
                 }
                 // A section to type my name
                 Section ("Introduce your name below 👇🏻 ") {

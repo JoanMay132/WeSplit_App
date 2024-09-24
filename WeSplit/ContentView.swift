@@ -84,6 +84,8 @@ struct ContentView: View {
                 // A section to show the total amount for the check + tip
                 Section ("Total amount for the check") {
                     Text(AmountAndTip, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                        // Conditional modifier
+                        .foregroundStyle(tipPercentage == 0 ? .red : .primary)
                 }
                 // Amount per person
                 Section ("Amount per person: "){ //Printing the typed amount

@@ -58,7 +58,7 @@ struct ContentView: View {
                 }
              
                 
-                Section("Amount per person"){ // A section to type an amount and select number of people
+                Section("Total amount without tip"){ // A section to type an amount and select number of people
                     TextField("Amount", value: $checkAmount, format: .currency(code: Locale.autoupdatingCurrent.currency?.identifier ?? "USD"))
                         .keyboardType(.decimalPad)
                         .focused($amountIsFocused)
